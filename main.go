@@ -66,8 +66,10 @@ func asciiHandler(w http.ResponseWriter, r *http.Request) {
 
 	data := struct {
 		Result string
+		Text   string
 	}{
 		Result: ascii,
+		Text:   text,
 	}
 
 	if err := temp.Execute(w, data); err != nil {

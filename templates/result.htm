@@ -9,8 +9,10 @@
     <div class="result">
       {{if .Result}}
       <!-- <h2>Result:</h2> -->
+      <textarea name="text">{{.Text}}</textarea>
       <pre>{{.Result}}</pre>
       {{end}}
     </div>
+    <a href="/"> <- Go back</a>
   </body>
 </html>
